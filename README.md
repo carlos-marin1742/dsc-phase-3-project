@@ -7,6 +7,7 @@ Customer turnover affects every company.  For this telecom company, the causes a
 
 ## Business Problem
 In a Perfect world, customer retention would be 100 percent. Unfortunately customer turnover is an everyday thing. First we identify causes of turnover. Then using machine learning algorithms, we can predict which would give us the most accurate predictions for future predictions
+![](churn_counts.png)
 
 
 ## Data
@@ -27,7 +28,8 @@ For Logistic Regression only
 ![](ROC_CURVE.png)
 For KNN, Decision Trees, and Random Forests Models, and Logistic Regression
 - Calculated accuracy using the confusion matrix
-For Decision Trees only, provide feature importance to see which features played a role in customer turnover/customer retention
+- Evaluated Precison, Recall, and f1 score of each model
+For Random Forests only, provide feature importance to see which features played a role in customer turnover/customer retention
 
 
 ## Results
@@ -36,10 +38,21 @@ Looking at Odds ratio data:
 - Also customers who have made customer service calls are 55% more likely to leave.
 - Customers who make international calls are 8% less likely to leave, and customers who have a voicemail plan are 84% less likely to leave
 
-For Logistic Regression, the model had an accuracy score of 0.67
-For KNN, the model had an accuracy score of 0.867
-For Decision Trees, the model had an accuracy score of 0.868
-For Random Forests, the model had an accuracy score of 0.867
+For Logistic Regression, the model had an accuracy score of 0.70
+
+For KNN, the model had an accuracy score of 0.87
+
+For Decision Trees, the model had an accuracy score of 0.87
+
+For Random Forests, the model had an accuracy score of 0.87
+
+Because KNN, Decision Trees, and RandomForests, have the same accuracy. The next best deciding factor is the f1 score.
+
+For KNN, the model had an f1 score of 0.42
+
+For Decison Trees, the model had an f1 score of 0.42
+
+For Random Forests, the model had an f1 score of 0.55
 
 ![](Feature_importance.png)
 Plotting feature importance, using Decision Trees. customer services calls and then total international calls were top two important features, when determining customer turnover/customer retention
@@ -52,4 +65,12 @@ Also customers who have made customer service calls are 55% more likely to leave
 
 Plotting feature importance, using Decision Trees. customer services calls and then total international calls were top two important features for determining customer turnover / customer retention. 
 
-Decision Trees has the best accuracy among the models tested when it comes to scoring for accuracy. KNN & Random Forests were a close second
+Logisitic Regression has the lowest accuracy among the models tested. KNN, Decision Trees, Random Forests had best accuracy
+
+Random Forest was tie breaker by best f1 score.
+
+
+
+
+
+
