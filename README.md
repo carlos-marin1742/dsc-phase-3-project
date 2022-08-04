@@ -7,6 +7,7 @@ Customer turnover affects every company.  For this telecom company, the causes a
 
 ## Business Problem
 In a Perfect world, customer retention would be 100 percent. Unfortunately customer turnover is an everyday thing. First we identify causes of turnover. Then using machine learning algorithms, we can predict which would give us the most accurate predictions for future predictions
+
 ![](churn_counts.png)
 
 
@@ -25,7 +26,9 @@ First evaluation using statsmodel logistic regression, to determine if variables
 - Non-Necessary variables were removed.
 For Logistic Regression only
 - Plot the Area Under The Curve using ROC to evaluate performance of model
+
 ![](ROC_CURVE.png)
+
 For KNN, Decision Trees, and Random Forests Models, and Logistic Regression
 - Calculated accuracy using the confusion matrix
 - Evaluated Precison, Recall, and f1 score of each model
@@ -55,6 +58,7 @@ For Decison Trees, the model had an f1 score of 0.42
 For Random Forests, the model had an f1 score of 0.55
 
 ![](Feature_importance.png)
+
 Plotting feature importance, using Decision Trees. customer services calls and then total international calls were top two important features, when determining customer turnover/customer retention
 
 
@@ -73,8 +77,12 @@ Random Forest was tie breaker by best f1 score.
 
 
 ├── data : data used for modeling
+
 ├── images : images used in PPT and readme
+
 ├── README.md : project information and repository structure
+
 ├── dsc-phase-3-project-presentation.pptx : (Presentation for Stakeholders)
+
 └── dsc-phase-3-project.ipynb (jupyter notebook used for modeling)
 
