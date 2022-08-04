@@ -72,5 +72,9 @@ Random Forest was tie breaker by best f1 score.
 
 
 
-
+├── data : data used for modeling
+├── images : images used in PPT and readme
+├── README.md : project information and repository structure
+├── dsc-phase-3-project-presentation.pptx : (Presentation for Stakeholders)
+└── dsc-phase-3-project.ipynb (jupyter notebook used for modeling)
 
